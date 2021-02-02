@@ -1,2 +1,2 @@
 #!/bin/bash
-echo export PATH="$PATH" | tr ':' '\n' | sed '/^$/d' | wc -l
+echo export PATH="$PATH" | tr -s ':' | tr ':' '\n' | wc -l
